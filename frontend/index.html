@@ -240,7 +240,9 @@
                     script.async = true;
                     script.defer = true;
                     script.onerror = reject;
+                    const originalInitMap = window.initMap;
                     window.initMap = () => {
+                        if (originalInitMap) originalInitMap();
                         resolve();
                     };
                     document.head.appendChild(script);

@@ -12,6 +12,7 @@
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "geolib": "^3.3.14",
     "twilio": "^5.13.1"
